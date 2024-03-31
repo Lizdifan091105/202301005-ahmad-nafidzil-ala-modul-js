@@ -6,8 +6,8 @@ console.log("operator assignment")
 let t= 10;
 let u= 5
 
-t +=u;
-Console.log(t);
+t += u;
+console.log(t);
 // outputnya 15
 /*assigment operator tambahan yang lain yaitu shortcut seperti diatas yaitu t +=u yang mmemiliki arti bahwa opertar itu menggunakan
 shortcut dari t=t+y. cara ini dapat digunakan pada operator aritmatika yang lain
