@@ -45,3 +45,41 @@ else if(language==='French'){
 console.log(greeting);
 
 // outputnya Bonjour
+
+/*avaScript juga mendukung ternary operator atau 
+conditional expressions. Dengan ini, kita bisa menuliskan if-else statement hanya dalam 
+satu baris.*/
+// penulisannya yaitu condition ? true expreesion : false expression
+ const isMamber = false;
+ const discount = isMamber ? 0.1 : 0;
+ console.log(`Anda mendapatkan diskon sebesar ${discount *100}%`)
+ //outputnya anda mendapatkan diskon sebesar 0%
+ /*Ternary operator membutuhkan tiga operand. Sebelum tanda tanya (?) berisi kondisi 
+yang ingin kita evaluasi. Kemudian diikuti dengan expression apabila nilai kondisinya 
+benar sebelum tanda titik dua. Terakhir adalah expression yang dieksekusi ketika 
+kondisinya salah. Karena merupakan conditional expression, maka operand kedua dan 
+ketiga harus mengembalikan nilai. */
+
+/*Lalu bagaimana jika kita menuliskan expression yang tidak 
+mengembalikan nilai boolean? Jawabannya bisa. nilai ini disebut truthy yaitu nilai ketika
+dievaluasi menghasilkan nilai true.nilai kedua disebut falsy artinya sama tapi outputnya false
+ Jadi manakah yang termasuk 
+truthy dan falsy? Selain nilai boolean false, tipe data atau nilai yang dianggap falsy, 
+antara lain: 
+Number 0 
+BigInt 0n 
+String kosong seperti “” atau „‟ 
+null 
+undefined
+NaN, atau Not a Number*/
+
+let name= "";
+
+if (name){
+    console.log(`halo,${name}`);
+
+}
+else{
+    console.log('nama masih kosong');
+}
+//outputnya Nama masih kosong
