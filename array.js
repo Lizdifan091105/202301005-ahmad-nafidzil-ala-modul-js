@@ -31,6 +31,21 @@ panjang Nilai array adalah 5
 length digunakan untuk menentukan panjang array
 */
 
+/*Untuk menambahkan data ke dalam array, dapat menggunakan metode push(). 
+Fungsi push ini akan menambahkan data di akhir array.*/
+const myArrayes= ['Coklat',42.5,22,true,"Programming"];
+
+myArrayes.push('javascript')
+console.log (myArrayes);
+// outputnya [Coklat,42.5,22,true,"Programming,javascript]
+
+/*Sedangkan untuk mengeluarkan data atau elemen terakhir dari array, dapat gunakan 
+metode pop().*/
+
+const myArays= ['orange',42.5,22,true,"Programming"];
+myArays.pop([]);
+console.log(myArays);
+//  outputnya ['orange',42.5,22,true]
 
 
 
