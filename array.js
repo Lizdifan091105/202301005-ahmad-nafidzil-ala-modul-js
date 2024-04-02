@@ -43,9 +43,35 @@ console.log (myArrayes);
 metode pop().*/
 
 const myArays= ['orange',42.5,22,true,"Programming"];
-myArays.pop([]);
+myArays.pop();
 console.log(myArays);
 //  outputnya ['orange',42.5,22,true]
 
+/*Metode lain yang bisa digunakan untuk memanipulasi data pada array adalah shift() 
+dan unshift(). Metode shift() digunakan untuk mengeluarkan elemen pertama dari 
+array, sementara unshift() digunakan untuk menambahkan elemen di awal array.*/
+let aray =['cokelat',42.5,22,true,'programming']
+aray.shift();
+aray.unshift('Apple')
+console.log(aray);
+/*outputnya[ Apple,42.5,22,true,programming] */
+
+/*Untuk menghapus data dari array dapat menggunakan keyword delete. Namun, di 
+sini keyword delete hanya menghapus data pada index yang ditentukan lalu 
+membiarkan posisi tersebut kosong.*/
+
+let araay =['cokelat',42.5,22,true,'programming'];
+
+delete araay[1];
+console.log(araay);
+/*outputnya ['cokelat', empty, 22, true, 'programming']
+indeks 1 menjadi empety karena sudah dihapus sehingga indeks tersbut kosong
+atau empety */
+//Untuk menghapus elemen, gunakan metode splice() seperti ini:
+
+let arays =['cokelat',42.5,22,true,'programming']
+arays.splice(2,1) //Menghapus indeks 2 sebanyak 1 elemen
+console.log(arays)
+// outputnya [cokelat,42.5,true,programming]
 
 
