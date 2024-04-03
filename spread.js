@@ -28,7 +28,7 @@ const allFavorits=[favorits, others];
 
 console.log(allFavorits);
 /*Nilai array tidak akan tergabung. Alih-alih menggabungkan nilainya, variabel 
-allFavorites menjadi array baru yang menampung dua array di dalamnya. Nah, 
+allFavorits menjadi array baru yang menampung dua array di dalamnya. Nah, 
 bagaimana jika menggunakan spread operator.*/
 const favorit=['Seafood','Salad','nugget','Soup']
 const other= ['Cake','pie','Donut']
