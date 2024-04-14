@@ -17,4 +17,4 @@ let hasil4= j>k;
 let hasil5= j<k;
 console.log(hasil4);
 console.log(hasil5);
-//outputnya false dan true
+//outputnya false dan terpenuhi
