@@ -31,7 +31,7 @@ console.log(getfee(false))
 console.log(getfee(null))
 
 
-//multicondition statement
+//4.multicondition statement
 
 /*Untuk menghadapi multiple condition kita bisa menggunakan If.. Else If dan Else, 
 block statement ke n akan dieksekusi jika kondisinya memenuhi syarat. */
@@ -47,3 +47,79 @@ else{
 
 }
 // outputnya the number is negative
+
+// 5.switch style
+for (let i=1; i<=5;i++){
+   if (i ==3){
+      break;
+   }
+   console.log(i);
+}
+//atau
+let f =2
+switch (f) {
+   case 1:
+      f='one';
+      break;
+   case 2:
+      f='two';
+      break;
+   default:
+      a= 'not found';
+      break;
+
+}
+console.log(`the velue is ${f}`)
+// outputnya  the velue is two
+
+
+
+// contoh2 
+let result;
+//input operasi aritmatika
+const operator= prompt('masukan operasi aritmatika (penjumlahan input (+), pengurangan input(-),perkalian input (*), pembagian input(/) ) ')
+
+
+const number1 = parseFloat(prompt(' masukkan angka pertama :'));
+// parseFloat digunakan untuk menkonversi angka yang bertipe data string menjadi angka
+const number2= parseFloat(prompt('masukkan angka ke dua :'));
+
+switch (operator) {
+   case '+':
+      result = number1+number2;
+      console.log( `${number1}+${number2} = ${result}`);
+      break ;
+   case '(+)':
+       result = number1+number2;
+       console.log( `${number1}+${number2} = ${result}`);
+       break ;
+   case '-' :
+      result= number1-number2;
+       console.log( `${number1}-${number2} = ${result}`);
+       break ;
+   case '(-)':
+      result = number1-number2;
+      console.log( `${number1}-${number2} = ${result}`);
+      break ;
+   case '*':
+      result = number1*number2;
+      console.log( `${number1}*${number2} = ${result}`);
+      break ;
+   case '(*)':
+      result = number1*number2;
+      console.log( `${number1}*${number2} = ${result}`);
+      break ;
+   case '/':
+   result = number1/number2;
+      console.log( `${number1}/${number2} = ${result}`);
+      break ;
+   case '(/)':
+      result = number1/number2;
+      console.log( `${number1}/${number2} = ${result}`);
+      break ;
+   default :
+      console.log('operasi aritmatika tidak ditemukan. mohon isi dengan benar ')
+      break;
+      
+}
+
